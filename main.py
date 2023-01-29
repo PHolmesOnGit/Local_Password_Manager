@@ -4,9 +4,6 @@ from random import *
 import pyperclip
 import json
 
-auth_accepted = False
-AUTH_PASSWORD = "RiverFoxtrotDeltaWither"
-
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_pw():
@@ -85,27 +82,11 @@ def find_password():
 # ---------------------------- UI SETUP ------------------------------- #
 
 
-# def authenticate():
-#    if auth_entry.get() == AUTH_PASSWORD:
-#        return True
-
-
 window = Tk()
 window.title("Password Manager")
 window.config(padx=20, pady=20)
 
-# auth_button = Button(text="Confirm Login Password", command=authenticate)
-# auth_button.grid(row=1, column=0)
 
-# auth_entry = Entry()
-# auth_entry.grid(row=0, column=0)
-
-
-# if authenticate():
-#    auth_accepted = True
-
-
-# while auth_accepted:
 # Logo setup
 img = PhotoImage(file="logo.png")
 canvas = Canvas(width=200, height=200)
